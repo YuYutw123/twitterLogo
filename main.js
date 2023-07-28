@@ -17,14 +17,10 @@ async function loading() {
     sleep(1000).then(function () {
         let titleDOM = document.querySelector('title').textContent;
         let prefix = '';
-        for (let i = 0; i < titleDOM.length; i++) { 
-            if (titleDOM[i] != 'X') {
-                prefix += titleDOM[i];
-            } else {
-                prefix += "Twitter";
-                break;
-            }
+        for (let i = 0; i < titleDOM.length-1; i++) {
+            prefix += titleDOM[i];
         }
+        prefix += "Twitter";
         console.log(prefix);
         document.title = prefix;
     })
