@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Bird_back",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Get twitter bird back",
 
     "action":{
