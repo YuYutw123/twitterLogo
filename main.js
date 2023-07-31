@@ -16,6 +16,8 @@ document.body.onclick = function (e) {
 async function loading() { 
     sleep(1000).then(function () {
         let titleDOM = document.querySelector('title').textContent;
+        if (titleDOM[titleDOM.length - 1] != 'X')
+            return;
         let prefix = '';
         for (let i = 0; i < titleDOM.length-1; i++) {
             prefix += titleDOM[i];
